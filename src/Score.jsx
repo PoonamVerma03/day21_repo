@@ -20,6 +20,17 @@ function Score() {
                setScore(score+1);
           }} 
           >Increment</button>
+          <button className="bg-green-300 px-8 py-3 mt-5 text-white text-lg font-semibold rounded-xl hover:bg-green-500 active:scale-95 transition-all duration-200 shadow-[0_0_10px_rgba(0,0,0,0.1)] "
+          onClick ={()=>{
+               setScore(score-1);
+          }} 
+          >Decrement</button>
+
+          <button className="bg-green-300 px-8 py-3 mt-5 text-white text-lg font-semibold rounded-xl hover:bg-green-500 active:scale-95 transition-all duration-200 shadow-[0_0_10px_rgba(0,0,0,0.1)] "
+          onClick ={()=>{
+               setScore(0);
+          }} 
+          >Reset</button>
       </div>
     </div>
   );
